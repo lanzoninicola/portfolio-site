@@ -6,5 +6,10 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    description: "My first gatsby site",
+    title: "First Gatsby Site",
+    email: "lanzoni.nicola@gmail.com",
+  },
   plugins: [],
 }
