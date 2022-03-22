@@ -1,0 +1,24 @@
+fragment SiteContent on SiteContent {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  title
+  subtitle
+  contentBody {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  ctaTexts
+  siteMap {
+    ... on SiteMap {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

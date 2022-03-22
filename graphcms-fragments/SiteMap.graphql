@@ -1,0 +1,16 @@
+fragment SiteMap on SiteMap {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  sitePage
+  sitePageSection
+  sectionTitle
+  content {
+    ... on SiteContent {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}
